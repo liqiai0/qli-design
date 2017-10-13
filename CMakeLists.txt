@@ -17,8 +17,6 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
 
-add_subdirectory(template)      #模板方法模式
-add_subdirectory(strategy)      #策略模式
-add_subdirectory(observer)      #观察者模式
+add_subdirectory(action)      #行为型设计模式
 
 

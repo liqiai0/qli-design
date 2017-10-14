@@ -17,6 +17,6 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
 
-add_subdirectory(action)      #行为型设计模式
+add_subdirectory(Component)      #组件协作设计模式
 
 

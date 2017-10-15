@@ -18,5 +18,6 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
 
 add_subdirectory(Component)      #组件协作设计模式
+add_subdirectory(SRP)            #单一职责设计模式
 
 

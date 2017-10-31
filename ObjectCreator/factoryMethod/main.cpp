@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 
     ICar *mC = mCheryF->createCar();
     mC->run();
-    
+
     ICar *mB = mBmwF->createCar();
     mB->run();
 

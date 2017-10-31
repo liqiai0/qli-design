@@ -6,10 +6,10 @@ int main()
 {
     Cook *doFish = new DoFish();
     doFish->doDishes();
-    cout<<"==============================="<<endl; 
+    cout<<"==============================="<<endl;
     Cook *doBeef = new DoBeef();
     doBeef->doDishes();
-    
+
     return 0;
 }
 

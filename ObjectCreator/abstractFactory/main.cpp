@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[])
 {
-    
+
     IFacroty *cheryFactory = new CheryFactory();
     IFacroty *bmwFactory = new BMWFactory();
 
@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
     cCar->run();
     ISUV *cSuv = cheryFactory->createSUV();
     cSuv->run();
-    
+
     printf("=========================\n");
 
     ICar *bCar = bmwFactory->createCar();

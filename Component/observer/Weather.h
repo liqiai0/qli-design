@@ -12,9 +12,9 @@ public:
   void addObserser(IObserver *mObserser);
   void delObServer(IObserver *mObserser);
   void notifyAll();
-  virtual ~Earth(); 
+  virtual ~Earth();
 private:
-  list<IObserver *> mList;  
+  list<IObserver *> mList;
 };
 
 class Satellite : public IObserver

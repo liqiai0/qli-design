@@ -1,6 +1,7 @@
 #ifndef __SINGLETON_HH__
 #define __SINGLETON_HH__
 #include <iostream>
+#include <pthread.h>
 
 using namespace std;
 
@@ -33,5 +34,21 @@ private:
   static HungerSingleton * instance;
   int data;
 };
+
+class LazySingleThread
+{
+public:
+  virtual ~LazySingleThread();
+  void setData(int data);
+  int getData(void);
+  static LazySingleThread *getInstance();
+private:
+  LazySingleThread();
+  static pthread_mutex_t mutex;
+  static LazySingleThread *instance;
+  int data;
+};
+
+
 
 #endif

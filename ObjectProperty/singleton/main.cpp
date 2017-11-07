@@ -12,6 +12,15 @@ int main()
 
     LazySingle *mLay2 = LazySingle::getInstance();
     std::cout<<"mLay2 data="<<mLay2->getData()<<std::endl;
+
+
+    HungerSingleton* mHung = HungerSingleton::getInstance();
+    mHung->setData(15);
+    std::cout<<"mHung data="<<mHung->getData()<<std::endl;
+
+    HungerSingleton* mHung2 = HungerSingleton::getInstance();
+    std::cout<<"mHung2 data="<<mHung2->getData()<<std::endl;
+
     return 0;
 }
 
